@@ -1,0 +1,101 @@
+@import (less) "_fonts.less";
+@import (less) "_sprites.less";
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font: @primary_font_size/1.2 @primary_font;
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrap {
+    background: #fff;
+    flex: 1 1 auto;
+    overflow: hidden;
+    padding-bottom: 3rem;
+}
+
+.footer {
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    transition: all 0.15s ease;
+    color: @primary_color;
+    text-decoration: underline;
+
+    &:focus {
+        color: @primary_color;
+        outline: none !important;
+    }
+
+    &:hover {
+        color: @primary_color_hover;
+    }
+}
+
+@import (less) "_slick.less";
+@import (less) "_forms.less";
+@import (less) "_modals.less";
+
+ul.items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+.user-content {
+    .justifyright {
+        float: right;
+        margin: 0 0 1rem 1rem;
+    }
+
+    .justifyleft {
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto !important;
+    }
+}
+
+.wi-group {
+    position: relative;
+    padding-left: 1.7rem;
+
+    i {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 120%;
+    }
+}
+
+@media (min-width: 1450px) {
+    .container {
+        max-width: 1390px;
+    }
+}
+
