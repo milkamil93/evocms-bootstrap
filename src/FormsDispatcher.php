@@ -37,7 +37,7 @@ class FormsDispatcher
         ];
 
         foreach (['common', $formid] as $required => $filename) {
-            $filename = __DIR__ . '/../forms/' . $filename . '.inc.php';
+            $filename = MODX_BASE_PATH . 'assets/FormLister/config/custom/' . $filename . '.inc.php';
 
             if (!is_readable($filename)) {
                 if ($required) {

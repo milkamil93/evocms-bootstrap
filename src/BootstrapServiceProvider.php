@@ -22,6 +22,10 @@ class BootstrapServiceProvider extends ServiceProvider
 
     public function boot()
     {
+        $this->publishes([
+            dirname(__DIR__) . '/publish' => MODX_BASE_PATH,
+        ]);
+
         Blade::directive('run', function($args) {
             return "<?php echo \$modx->runSnippet($args); ?>";
         });

@@ -1,0 +1,19 @@
+{
+    "name": "mnoskov/evocms-bootstrap",
+    "autoload": {
+        "psr-4": {
+            "EvolutionCMS\\Bootstrap\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EvolutionCMS\\Bootstrap\\BootstrapServiceProvider"
+            ],
+            "files": {
+                "source": "assets/",
+                "destination": ""
+            }
+        }
+    }
+}
